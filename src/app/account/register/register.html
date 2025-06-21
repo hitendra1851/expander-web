@@ -1,0 +1,22 @@
+<form [formGroup]="accountForm">
+  <h3>Account Information</h3>
+  <input formControlName="email" type="email" placeholder="Email" />
+  <input formControlName="alias" placeholder="Alias" />
+  <input formControlName="accountType" placeholder="Account Type" />
+  <input formControlName="phone" placeholder="Phone" />
+  <input formControlName="address" placeholder="Address" />
+  <input formControlName="city" placeholder="City" />
+  <input formControlName="state" placeholder="State" />
+  <input formControlName="country" placeholder="Country" />
+  <input formControlName="postalCode" placeholder="Postal Code" />
+</form>
+
+<form [formGroup]="userForm" (ngSubmit)="submit()">
+  <h3>User Information</h3>
+  <input formControlName="firstName" placeholder="First Name" />
+  <input formControlName="lastName" placeholder="Last Name" />
+  <input formControlName="gender" placeholder="Gender" />
+  <input formControlName="password" type="password" placeholder="Password" />
+  <input formControlName="confirmPassword" type="password" placeholder="Confirm Password" />
+  <button type="submit">Register</button>
+</form>
